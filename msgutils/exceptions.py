@@ -4,3 +4,6 @@ class MsgUtilException(Exception):
 
 class DiscordpyNotFound(MsgUtilException):
     ...
+
+class SlackNotFound(MsgUtilException):
+    ...

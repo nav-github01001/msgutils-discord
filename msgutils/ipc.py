@@ -22,4 +22,7 @@ except:
 class MsgIPC:
     def __init__(self, ipcclass: Union[DiscordIPC, SlackIPC]):
         if HAS_DISCORD == False and isinstance(ipcclass, DiscordIPC):
-            pass
+            raise DiscordpyNotFound
+        if HAS_SLACK == False and isinstance(ipcclass,SlackIPC):
+            raise SlackNotFound
+        
