@@ -4,14 +4,14 @@ from setuptools import setup
 
 
 setup(
-    name="msgutils", 
+    name="msgutils-discord", 
     description="A library designed to make interactions with chat apps easier",
     long_description=...,
     author="Falcon & Team",
     author_email="falconmemes1@gmail.com", 
     license="GPLv3",
     url=...,
-    packages=["msgutils", "msgutils.discord"],
+    packages=["msgutils-discord", "msgutils.types"],
     classifiers=["Development Status :: 1 - Planning",
                 "Intended Audience :: Developers",
                 "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
